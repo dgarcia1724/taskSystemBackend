@@ -40,7 +40,3 @@ public class Task {
     private List<SubTask> subtasks = new ArrayList<>();
 }
 
-public enum Priority {
-    HIGH, MEDIUM, LOW;
-}
-
