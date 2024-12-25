@@ -2,6 +2,7 @@ package danny.taskSystemBackend.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Data
@@ -20,6 +21,7 @@ public class SubTask {
 
     @ManyToOne
     @JoinColumn(name = "task_id", nullable = false)
+    @JsonIgnore
     private Task task;
 }
 
